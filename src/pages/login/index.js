@@ -1,15 +1,21 @@
 /*
  * @Author: yeyuhang
  * @Date: 2020-11-25 12:00:42
- * @LastEditTime: 2020-11-25 12:02:30
+ * @LastEditTime: 2020-11-25 12:37:31
  * @LastEditors: yeyuhang
  * @Descripttion: 头部注释
  */
-import './index.css'
+import './index.scss'
 function Login() {
     return (
         <div className="App">
-            login
+            <div className="container">
+                <div className="window">
+                    <div className="moon"></div>
+                </div>
+                <div className="floor"></div>
+                <div className="door"></div>
+            </div>
         </div>
     );
 }
