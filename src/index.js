@@ -1,13 +1,18 @@
+/*
+ * @Author: yeyuhang
+ * @Date: 2020-11-25 11:14:13
+ * @LastEditTime: 2020-11-25 11:45:16
+ * @LastEditors: yeyuhang
+ * @Descripttion: 头部注释
+ */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RouterConfig from './Router/index'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <RouterConfig/>,
   document.getElementById('root')
 );
 
