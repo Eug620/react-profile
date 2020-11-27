@@ -1,8 +1,8 @@
 {
-  "name": "react-profile",
+  "name": "profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://eug620.github.io/react-profile",
+  "homepage": "https://eug620.github.io/reactProfile",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
