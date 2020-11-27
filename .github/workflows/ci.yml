@@ -1,0 +1,19 @@
+name: Actions Demo
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
+        ACCESS_TOKEN: ${{ secrets.REACT_PROFILE_SECRETS }}
+        BRANCH: gh-pages
+        FOLDER: build
+        BUILD_SCRIPT: yarn && yarn build
