@@ -1,13 +1,16 @@
 /*
  * @Author: yeyuhang
  * @Date: 2020-11-25 12:00:42
- * @LastEditTime: 2020-11-25 15:20:03
+ * @LastEditTime: 2020-11-27 16:05:53
  * @LastEditors: yeyuhang
  * @Descripttion: 头部注释
  */
 import './index.scss'
 function Login() {
-    let timer = new Date().toLocaleTimeString()
+    let timer = new Date().toTimeString().substring(0,8)
+    setInterval(()=>{
+        timer = new Date().toTimeString().substring(0,8)
+    })
     return (
         <div className="App">
             {/* bg */}
@@ -19,11 +22,11 @@ function Login() {
                 <div className="door"></div>
             </div>
             {/* 时间 */}
-            <div class="g-container">
-                <div class="g-number">{timer}</div>
-                <div class="g-contrast">
-                    <div class="g-circle"></div>
-                    <ul class="g-bubbles">
+            <div className="g-container">
+                <div className="g-number">{timer}</div>
+                <div className="g-contrast">
+                    <div className="g-circle"></div>
+                    <ul className="g-bubbles">
                         <li></li>
                         <li></li>
                         <li></li>
